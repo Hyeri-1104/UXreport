@@ -1,0 +1,27 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[margin=25mm]{geometry}
+\usepackage{graphicx}
+\usepackage{amsmath, amssymb}
+\usepackage{hyperref}
+\usepackage{biblatex}
+\addbibresource{references.bib}
+
+\title{My Report}
+\author{Your Name}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\section{Introduction}
+This is a minimal LaTeX report. Write text here.
+An inline equation $E=mc^2$ and a displayed one:
+\[
+\int_0^1 x^2 \, dx = \frac{1}{3}.
+\]
+
+\section{Citation demo}
+We cite an article~\cite{knuth1990}.
+
+\printbibliography
+\end{document}
