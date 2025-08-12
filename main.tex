@@ -1,27 +1,83 @@
-\documentclass[12pt,a4paper]{article}
-\usepackage[margin=25mm]{geometry}
+% !TeX root = main.tex
+% !TeX program = xelatex
+
+\documentclass[12pt]{article}
+
+% Packages
+\usepackage[margin=1in]{geometry}
 \usepackage{graphicx}
 \usepackage{amsmath, amssymb}
 \usepackage{hyperref}
-\usepackage{biblatex}
+\usepackage[backend=biber,style=apa]{biblatex}
 \addbibresource{references.bib}
 
-\title{My Report}
+\title{UX Research Report}
 \author{Your Name}
 \date{\today}
 
 \begin{document}
+
 \maketitle
 
-\section{Introduction}
-This is a minimal LaTeX report. Write text here.
-An inline equation $E=mc^2$ and a displayed one:
-\[
-\int_0^1 x^2 \, dx = \frac{1}{3}.
-\]
+\begin{abstract}
+This report summarizes the findings from a recent UX research study, outlining objectives, methodology, key findings, and actionable recommendations.
+\end{abstract}
 
-\section{Citation demo}
-We cite an article~\cite{knuth1990}.
+\section{Executive Summary}
+A brief overview of the study’s purpose, major findings, and recommendations.
+UX principles from \cite{nielsen1994} and cognitive design considerations from \cite{norman2013} were applied to interpret the results.
+
+\section{Research Goals}
+State the objectives of the research and what questions you aimed to answer.
+
+\section{Methodology}
+Describe the approach used (e.g., usability testing, interviews, surveys).
+\begin{itemize}
+    \item Participants: Number, demographics, recruitment
+    \item Tasks: What participants were asked to do
+    \item Data collection methods
+\end{itemize}
+
+\section{Participants}
+Details about the participants:
+\begin{itemize}
+    \item Age range
+    \item Technical proficiency
+    \item Relevant experience
+\end{itemize}
+
+\section{Key Findings}
+\subsection{Finding 1}
+Describe what you observed and how it relates to usability heuristics \cite{nielsen1994}.
+\subsection{Finding 2}
+Another observation, supported by design theory \cite{norman2013}.
+
+\section{Design Recommendations}
+Provide actionable recommendations for improving the user experience.
+
+\section{Figures and Tables}
+Example of inserting an image:
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\linewidth]{images/example.png}
+    \caption{Example UX flow}
+\end{figure}
+
+Example of a table:
+\begin{table}[h]
+\centering
+\begin{tabular}{lrr}
+\hline
+Task & Success Rate & Time (s) \\ \hline
+Login & 92\% & 12.3 \\
+Checkout & 68\% & 45.7 \\ \hline
+\end{tabular}
+\caption{Usability test results}
+\end{table}
+
+\section{References}
+Cite foundational LaTeX work here as well \cite{knuth1990}.
 
 \printbibliography
+
 \end{document}
